@@ -17,7 +17,6 @@ body {
     flex-direction: column;
     background-color: #FF8400;
     padding: 3rem 0 3rem 0;
-    /* height: 10vh; */
 }
 
 .heading {
@@ -159,14 +158,25 @@ body {
 }
 
 @media screen and (max-width: 390px) and (max-height: 844px) {
+    .heading-container {
+        align-items: center;
+    }
+
+    .heading {
+        padding: 0;
+    }
+
     .subHeading {
+        padding: 0;
         font-size: .5rem;
     }
 
     .form-container {
-        height: 100vh;
         display: flex;
         justify-content: center;
+    }
+
+    .form-container form {
         padding: 0;
     }
 
@@ -177,5 +187,14 @@ body {
     .form-container form input {
         padding-right: 0;
         width: 10rem;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        padding: 0;
     }
 }
